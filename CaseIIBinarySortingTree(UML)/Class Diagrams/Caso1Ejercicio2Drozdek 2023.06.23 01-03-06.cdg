@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Caso1Ejercicio2Drozdek">
+  <ClassDiagramComponents>
+    <Class name="Node" package="edu.ade.caso1ejercicio2drozdek" visibility="public" xPosition="255.0" yPosition="445.0">
+      <Fields>
+        <Field name="value" type="int" visibility="package"/>
+        <Field name="left" type="Node" visibility="package"/>
+        <Field name="right" type="Node" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="package">
+          <Argument type="int" name="value"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="Caso1Ejercicio2Drozdek" package="edu.ade.caso1ejercicio2drozdek" visibility="public" xPosition="67.0" yPosition="134.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="buildCompleteBinaryTree" returnType="Node" visibility="private" isStatic="true">
+          <Argument type="int[]" name="data"/>
+          <Argument type="int" name="height"/>
+          <Argument type="int" name="E"/>
+        </Method>
+        <Method name="insertElement" returnType="void" visibility="private" isStatic="true">
+          <Argument type="Node" name="root"/>
+          <Argument type="int" name="value"/>
+          <Argument type="int" name="height"/>
+          <Argument type="int" name="E"/>
+        </Method>
+        <Method name="extractSortedArray" returnType="int[]" visibility="private" isStatic="true">
+          <Argument type="Node" name="root"/>
+          <Argument type="int" name="n"/>
+        </Method>
+        <Method name="extractSortedArrayRec" returnType="int" visibility="private" isStatic="true">
+          <Argument type="Node" name="root"/>
+          <Argument type="int[]" name="sortedArray"/>
+          <Argument type="int" name="index"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="left" source="edu.ade.caso1ejercicio2drozdek.Node" target="edu.ade.caso1ejercicio2drozdek.Node" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="edu.ade.caso1ejercicio2drozdek.Caso1Ejercicio2Drozdek" target="edu.ade.caso1ejercicio2drozdek.Node" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="right" source="edu.ade.caso1ejercicio2drozdek.Node" target="edu.ade.caso1ejercicio2drozdek.Node" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
